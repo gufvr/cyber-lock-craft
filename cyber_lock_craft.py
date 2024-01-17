@@ -12,3 +12,16 @@ def password_generator(Len_pass = 8):
     for i in range(0, Len_pass):
         digit = random.choice(options)
         password_user = password_user + digit
+    
+    return password_user
+
+user_choice = input("Quantos dígitos na senha?: ")
+
+if user_choice.isdigit():
+    user_choice = int(user_choice)
+else:
+    print("Entrada inválida")
+    quit()
+
+response = password_generator(Len_pass = user_choice)
+print(f"Senha gerada:\n{response}")
