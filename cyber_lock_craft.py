@@ -23,4 +23,4 @@ else:
     quit()
 
 response = password_generator(Len_pass = user_choice)
-print(f"Senha gerada:\n{response}")
+print(f"Senha gerada: {response}")
